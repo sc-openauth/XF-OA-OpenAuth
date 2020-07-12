@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="con_acc.openauth" version_id="1000010" version_string="1.0.0"><![CDATA[OpenAuth.dev]]></phrase>
+  <phrase title="con_acc_desc.openauth" version_id="1000010" version_string="1.0.0"><![CDATA[]]></phrase>
+  <phrase title="con_acc_openauth_client_id_explain" version_id="1000010" version_string="1.0.0"><![CDATA[Client ID of the created <a href="https://www.openauth.dev/developer/app-create/" target="_blank" rel="noopener noreferrer">OpenAuth.dev</a> application.]]></phrase>
+  <phrase title="con_acc_openauth_client_secret_explain" version_id="1000010" version_string="1.0.0"><![CDATA[The secret for the OpenAuth.dev application you created for this domain.]]></phrase>
+</phrases>

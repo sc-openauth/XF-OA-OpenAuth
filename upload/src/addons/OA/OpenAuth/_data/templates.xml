@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="admin" title="connected_account_provider_openauth" version_id="100010" version_string="1.0.0"><![CDATA[<xf:textboxrow name="options[client_id]" value="{$options.client_id}"
+	label="{{ phrase('client_id') }}"
+	hint="{{ phrase('required') }}"
+	explain="{{ phrase('con_acc_openauth_client_id_explain') }}" />
+
+<xf:textboxrow name="options[client_secret]" value="{$options.client_secret}"
+	label="{{ phrase('client_secret') }}"
+	hint="{{ phrase('required') }}"
+	explain="{{ phrase('con_acc_openauth_client_secret_explain') }}" />]]></template>
+  <template type="admin" title="connected_account_provider_test_openauth" version_id="100010" version_string="1.0.0"><![CDATA[<xf:if is="!$providerData">
+    <xf:inforow>
+        {{ phrase('this_will_test_x_connected_account_provider_explain', {'title': $provider.title}) }}
+    </xf:inforow>
+
+    <xf:formrow label="{{ phrase('client_id') }}">{$provider.options.client_id}</xf:formrow>
+<xf:else />
+    <xf:inforow rowtype="confirm"><strong>{{ phrase('test_passed') }}</strong></xf:inforow>
+	
+    <xf:macro template="connected_account_provider_test_macros" name="display_name"
+		arg-name="{$providerData.nickname}" />
+</xf:if>]]></template>
+  <template type="public" title="connected_account_associated_openauth" version_id="1000010" version_string="1.0.0"><![CDATA[<xf:if is="$providerData.picture">
+	<img src="{$providerData.picture}" width="48" alt="" />
+	<div>{$providerData.nickname}</div>
+<xf:else />
+	{{ phrase('account_associated') }}
+</xf:if>]]></template>
+</templates>
