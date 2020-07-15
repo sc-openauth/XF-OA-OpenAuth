@@ -2,7 +2,7 @@
 
 <div align=center>
 
-![openauth-icon](https://user-images.githubusercontent.com/81188/87192541-f9fbe600-c2f6-11ea-9c8c-aebe7813d154.png)
+![openauth-icon](https://user-images.githubusercontent.com/81188/87538212-25d2ef00-c69c-11ea-87a7-b967826cb669.png)
 
 
 ### OpenAuth.dev Provider for XenForo 2
